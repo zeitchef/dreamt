@@ -8,9 +8,6 @@ dependencies:
   '@apollo/client':
     specifier: ^3.9.7
     version: 3.9.7(graphql@16.8.1)
-  '@formkit/tempo':
-    specifier: ^0.0.17
-    version: 0.0.17
   '@vue/apollo-composable':
     specifier: ^4.0.2
     version: 4.0.2(@apollo/client@3.9.7)(graphql@16.8.1)(typescript@5.4.2)(vue@3.4.21)
@@ -741,10 +738,6 @@ packages:
     resolution: {integrity: sha512-Ys+3g2TaW7gADOJzPt83SJtCDhMjndcDMFVQ/Tj9iA1BfJzFKD9mAUXT3OenpuPHbI6P/myECxRJrofUsDx/5g==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
-
-  /@formkit/tempo@0.0.17:
-    resolution: {integrity: sha512-2gZE6oxp3dK6HigiKWclbCigmQGrbDTHIYe3D12T88RCorRznet2bpr7/wESBi6JFtSb0Y0NTnLvg6nfAcHERg==}
-    dev: false
 
   /@graphql-typed-document-node/core@3.2.0(graphql@16.8.1):
     resolution: {integrity: sha512-mB9oAsNCm9aM3/SOv4YtBMqZbYj10R7dkq8byBqxGY/ncFwhf2oQzMV+LCRlWoDSEBJ3COiR1yeDvMtsoOsuFQ==}

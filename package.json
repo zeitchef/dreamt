@@ -12,12 +12,10 @@
     "type-check": "vue-tsc --build --force",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
-    "lcp": "lcp --proxyUrl https://www.lottohelden.de",
-    "proxy": "uncors --from 'http://localhost' --to 'https://lottohelden.de' --http-port 8080 --debug"
+    "proxy": "lcp --proxyUrl https://www.lottohelden.de"
   },
   "dependencies": {
     "@apollo/client": "^3.9.7",
-    "@formkit/tempo": "^0.0.17",
     "@vue/apollo-composable": "^4.0.2",
     "graphql": "^16.8.1",
     "graphql-tag": "^2.12.6",

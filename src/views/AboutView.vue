@@ -1,14 +1,27 @@
-<script setup>
-import { useQuery } from '@tanstack/vue-query'
+<script setup lang="ts">
+import { useQuery } from '@vue/apollo-composable'
+import gql from 'graphql-tag'
+// import { format } from '@formkit/tempo'
 
-const { isLoading, isFetching, isError, data, error } = useQuery({
-  queryKey: ['jackpot'],
-  queryFn: getLotteryNumbers
-})
+const query = gql(`
+  query getDraw ($date: String!, $limit: Int!, $type: String!) {
+    draw (date: $date, limit: $limit, type: $type) {
+      backendError
+    }
+  }
+`)
+const variables = {
+  date: 'Jan 18 2018',
+  limit: 3,
+  type: 'eurojackpot'
+}
+
+const { result } = useQuery(query, variables)
 </script>
 
 <template>
   <div class="about">
-    Euro Jackpot Here
+    <h1 class="text-3xl">About</h1>
+    <pre>{{ result || 'No result' }}</pre>
   </div>
 </template>

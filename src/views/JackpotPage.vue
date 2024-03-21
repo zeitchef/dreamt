@@ -33,13 +33,7 @@ const additonalNumbers = computed(() => result.value?.draw?.draws[0]?.additional
 <template>
   <div class="mt-12 flex h-full w-full flex-col items-center p-4">
     <section class="w-full max-w-96">
-      <VueDatePicker
-        v-model="dateRef"
-        :clearable="false"
-        :max-date="date"
-        :enable-time-picker="false"
-        class="w-full"
-      />
+      <VueDatePicker v-model="dateRef" :clearable="false" :max-date="date" :enable-time-picker="false" class="w-full" />
     </section>
 
     <section class="mt-8">

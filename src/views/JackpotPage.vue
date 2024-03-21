@@ -26,7 +26,10 @@ const numbers = computed(() => result.value?.draw?.draws[0]?.numbers)
 </script>
 
 <template>
-  <div class="about">
+  <div class="h-full w-full flex flex-col justify-center items-center">
+    <header class="flex justify-center">
+      <h1 class="text-3xl font-bold">{{ formattedDate }}</h1>
+    </header>
     <!-- loading state -->
     <div v-if="loading">Loading...</div>
     <!-- error state -->

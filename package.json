@@ -17,6 +17,7 @@
   "dependencies": {
     "@apollo/client": "^3.9.8",
     "@vue/apollo-composable": "^4.0.2",
+    "@vuepic/vue-datepicker": "^8.3.1",
     "graphql": "^16.8.1",
     "graphql-tag": "^2.12.6",
     "pinia": "^2.1.7",

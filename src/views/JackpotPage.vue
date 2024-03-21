@@ -27,7 +27,7 @@ const { result, loading, error } = useQuery(query, {
 })
 
 const numbers = computed(() => result.value?.draw?.draws[0]?.numbers)
-const additonalNumbers = computed(() => result.value?.draw?.draws[0]?.additionalNumbers)
+const additionalNumbers = computed(() => result.value?.draw?.draws[0]?.additionalNumbers)
 </script>
 
 <template>
@@ -44,7 +44,7 @@ const additonalNumbers = computed(() => result.value?.draw?.draws[0]?.additional
       <div v-else-if="error">{{ error.message }}</div>
 
       <main v-if="result">
-        <NumberDisplay :numbers="numbers" :additonalNumbers="additonalNumbers" />
+        <NumberDisplay :numbers="numbers" :additionalNumbers="additionalNumbers" />
       </main>
     </section>
   </div>

@@ -3,7 +3,7 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  <div class="h-screen w-full flex flex-col bg-blue-100">
+  <div class="h-screen w-full flex flex-col">
     <header>
       <div class="wrapper">
         <nav class="p-4 grow-0 border-black">
@@ -17,7 +17,7 @@ import { RouterLink, RouterView } from 'vue-router'
       <RouterView />
     </main>
 
-    <footer class="grow-0 p-4 flex justify-between border border-black">
+    <footer class="grow-0 p-4 flex justify-between">
       <p>Made with ❤️ by ZeitWeb</p>
       <p>&copy; {{ new Date().getFullYear() }} LottoHeaven</p>
     </footer>

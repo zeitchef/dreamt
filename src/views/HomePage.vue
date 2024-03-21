@@ -12,14 +12,17 @@ import { RouterLink } from 'vue-router'
       reprehenderit. Occaecat et non nulla velit voluptate aliquip ex. Consectetur eiusmod magna ad
       non tempor incididunt nulla culpa proident fugiat sunt laboris excepteur commodo.
     </p>
-    <section class="flex flex-col items-center mt-8">
-      <button class="mt-8 rounded border-2 border-blue-500 p-2">
+    <section class="mt-8 flex flex-col items-center">
+      <button class="rounded border-2 border-blue-500 p-2">
         <RouterLink to="/jackpot" class="text-2xl text-blue-500">
           Today's Winning EuroJackpot
         </RouterLink>
       </button>
-      <img src="../assets/img/winning.webp" alt="Man winning money flying around him"
-        class="md:max-w-6xl mt-8 grow-0 rounded-lg" />
+      <img
+        src="../assets/img/winning.webp"
+        alt="Man winning money flying around him"
+        class="mt-8 grow-0 rounded-lg md:max-w-6xl"
+      />
     </section>
   </main>
 </template>

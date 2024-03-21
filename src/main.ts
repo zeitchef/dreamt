@@ -1,6 +1,5 @@
 import './assets/main.css'
 import { createApp } from 'vue'
-import { createPinia } from 'pinia'
 import { DefaultApolloClient } from '@vue/apollo-composable'
 import { ApolloClient, InMemoryCache, HttpLink } from '@apollo/client/core'
 import VueDatePicker from '@vuepic/vue-datepicker'
@@ -22,7 +21,6 @@ const app = createApp(App).provide(DefaultApolloClient, apolloClient)
 
 app.component('VueDatePicker', VueDatePicker)
 
-app.use(createPinia())
 app.use(router)
 
 app.mount('#app')

@@ -2,7 +2,7 @@
 import { useQuery } from '@vue/apollo-composable'
 import gql from 'graphql-tag'
 import { formatDate } from '@/utils/date'
-import { computed } from 'vue';
+import { computed } from 'vue'
 
 const formattedDate = formatDate(new Date())
 
@@ -26,7 +26,7 @@ const numbers = computed(() => result.value?.draw?.draws[0]?.numbers)
 </script>
 
 <template>
-  <div class="h-full w-full flex flex-col justify-center items-center">
+  <div class="flex h-full w-full flex-col items-center justify-center">
     <header class="flex justify-center">
       <h1 class="text-3xl font-bold">{{ formattedDate }}</h1>
     </header>

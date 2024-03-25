@@ -33,13 +33,7 @@ const additionalNumbers = computed(() => result.value?.draw?.draws[0]?.additiona
 <template>
   <div class="mt-12 flex h-full w-full flex-col items-center p-4">
     <section class="w-full max-w-96">
-      <VueDatePicker
-        v-model="dateRef"
-        :clearable="false"
-        :max-date="date"
-        :enable-time-picker="false"
-        class="w-full"
-      />
+      <VueDatePicker v-model="dateRef" :clearable="false" :max-date="date" :enable-time-picker="false" class="w-full" />
     </section>
 
     <section class="mt-8">
@@ -47,7 +41,7 @@ const additionalNumbers = computed(() => result.value?.draw?.draws[0]?.additiona
         <h1 class="text-3xl font-bold">{{ formattedDate }}</h1>
       </header>
       <div v-if="loading">Loading...</div>
-      <div v-else-if="error">{{ error.message }}</div>
+      <div v-if="error">{{ error.message }}</div>
 
       <main v-if="result">
         <NumberDisplay :numbers="numbers" :additionalNumbers="additionalNumbers" />

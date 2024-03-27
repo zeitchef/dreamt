@@ -31,8 +31,8 @@ describe('NumberDisplay', () => {
   it('should render empty state', () => {
     const wrapper = mount(NumberDisplay, {
       props: {
-        numbers: null,
-        additionalNumbers: null
+        numbers: undefined,
+        additionalNumbers: undefined
       }
     })
     const noNumbers = wrapper.find('[data-test="no-numbers"]')

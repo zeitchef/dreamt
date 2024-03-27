@@ -18,11 +18,8 @@ import { RouterLink } from 'vue-router'
           Today's Winning EuroJackpot
         </RouterLink>
       </button>
-      <img
-        src="../assets/img/winning.webp"
-        alt="Man winning money flying around him"
-        class="mt-8 grow-0 rounded-lg md:max-w-6xl"
-      />
+      <img src="../assets/img/winning.webp" srcset="../assets/img/winning.webp
+      720w" height="auto" width="720" alt="Man winning money flying around him" class="mt-8 grow-0 rounded-lg" />
     </section>
   </main>
 </template>

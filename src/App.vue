@@ -6,7 +6,7 @@ import { RouterLink, RouterView } from 'vue-router'
   <div class="flex h-screen w-full flex-col">
     <header class="bg-transparent">
       <div class="wrapper">
-        <nav class="grow-0 border-black p-4">
+        <nav class="grow-0 p-4">
           <RouterLink to="/" class="mr-4">Welcome</RouterLink>
           <RouterLink to="/jackpot">EuroJackpot</RouterLink>
         </nav>

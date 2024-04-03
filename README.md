@@ -37,7 +37,6 @@ pnpm proxy
 
 - This project uses Vue 3, TypeScript and GraphQL.
 - I've taken the words "KEEP IT SIMPLE" very much to heart. This project won't win any design awards, and I did not focus too much on it. Rather, I wanted to present the fundamentals of what every good web project needs, in my opinion: component-based, responsive, tested, focused on usability (error states, empty states, 404, etc), well-documented, and clean code.
-- I honestly did struggle a bit with setting up the cors-proxy initially, and trace these struggles back to using a different proxy server than the one that was suggested.
 
 ## Personal Notes
 
